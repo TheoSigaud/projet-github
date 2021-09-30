@@ -1,0 +1,9 @@
+## Qu'est-ce que cela implémente/répare ? Expliquez vos changements.
+...
+
+## Cela permet-il de résoudre des problèmes actuellement en suspens ?
+...
+
+## D'autres commentaires ?
+...
+
