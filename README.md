@@ -32,3 +32,5 @@ $ composer install
 $ composer update
 $ php artisan migrate --seed
 ```
+
+### Mirroring
