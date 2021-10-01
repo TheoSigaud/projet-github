@@ -34,3 +34,8 @@ $ php artisan migrate --seed
 ```
 
 ### Mirroring
+
+Pour activer le mirrorin, lancer:
+
+```
+```
