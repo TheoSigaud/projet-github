@@ -1,3 +1,5 @@
+version: "3"
+
 services:
   db:
     image: mysql:5.6
@@ -12,7 +14,7 @@ services:
     volumes:
       - ./blog:/var/www/html/
     env_file:
-      - blog/.env
+      - ./.env
     depends_on:
       - db
     ports:
