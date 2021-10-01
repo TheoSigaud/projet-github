@@ -35,7 +35,8 @@ $ php artisan migrate --seed
 
 ### Mirroring
 
-Pour activer le mirrorin, lancer:
+Pour activer le mirroring, lancer:
 
 ```
+$ git remote set-url --add --push origin <adresse du second repository>
 ```
