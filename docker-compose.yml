@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  db:
+    image: mysql:5.6
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+
+  app:
+    build: docker
+    volumes:
+      - ./blog:/var/www/html/
+    env_file:
+      - ./.env
+    depends_on:
+      - db
+    ports:
+      - "${APP_HTTP_PORT:-8080}:80"
