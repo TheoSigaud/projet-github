@@ -12,7 +12,7 @@ services:
   app:
     build: docker
     volumes:
-      - ./blog:/var/www/html/
+      - ./blog:/var/www/html
     env_file:
       - ./.env
     depends_on:
