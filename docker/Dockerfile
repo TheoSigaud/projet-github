@@ -22,6 +22,8 @@ RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 RUN sed -i 's/html/html\/public/' /etc/apache2/sites-available/000-default.conf
+
+RUN a2enmod rewrite
 # Set working directory
 WORKDIR /var/www/html
 
