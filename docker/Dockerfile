@@ -21,6 +21,7 @@ RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
 # Get latest Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+RUN sed -i 's/html/html\/public/' /etc/apache2/sites-available/000-default.conf
 # Set working directory
 WORKDIR /var/www/html
 
